@@ -1,0 +1,762 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+img {
+  height: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+li {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+p,
+li,
+a,
+button {
+  font-family: "Cabin", sans-serif;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.headerleft-side {
+  width: 50%;
+}
+.headerright-side {
+  width: 50%;
+}
+.header-menu ul li {
+  display: inline-block;
+  margin: 0 16px;
+}
+.header-menu a {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #777777;
+}
+li.active a {
+  color: #333;
+}
+header {
+  border-bottom: 1px solid #1111111a;
+}
+nav {
+  padding: 10px 0;
+}
+.yourproductleft {
+  width: 50%;
+}
+.yourproductright {
+  width: 50%;
+}
+.productimg {
+  text-align: end;
+}
+header li a {
+  text-decoration: none;
+  position: relative;
+}
+header li a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 4px;
+  background-color: #2cbde2;
+  transition: width 0.5s;
+}
+header li a:hover::after {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+#yourproduct {
+  width: 100%;
+  background-image: url("../Assets/Images/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 50px 0;
+}
+.productcontent h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  letter-spacing: -0.05em;
+}
+.productcontent p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+}
+a.btn {
+  background-color: #2cbde2;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  line-height: 55px;
+  display: inline-block;
+  padding: 0 30px;
+  border-radius: 35px;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #1bacd1;
+  color: #fff;
+}
+/*-------------------------------------- third box css started here-------------------------------- */
+section.threesection {
+  padding: 80px 0;
+  background-color: #f7f7f7;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+.threesectionBox {
+  width: 32.33%;
+  margin: 1%;
+  text-align: center;
+}
+.mobile-icon {
+  position: relative;
+  font-size: 45px;
+  margin-bottom: 15px;
+  color: #2cbde2;
+  transition: all 0.5s ease-in-out;
+}
+.mobile-icon::after {
+  content: "\f26c";
+  font-family: "fontAwesome";
+}
+.tool-icon {
+  position: relative;
+  font-size: 45px;
+  margin-bottom: 15px;
+  color: #2cbde2;
+  transition: all 0.5s ease-in-out;
+}
+.tool-icon::after {
+  content: "\f110";
+  font-family: "FontAwesome";
+}
+.linegraph-icon {
+  position: relative;
+  font-size: 45px;
+  margin-bottom: 15px;
+  color: #2cbde2;
+  transition: all 0.5s ease-in-out;
+}
+.linegraph-icon::after {
+  content: "\f0f3";
+  font-family: "FontAwesome";
+}
+.threesectionbox-sub h3 {
+  margin: 10px 0 10px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: #333;
+  letter-spacing: -0.02em;
+}
+.threesectionbox-sub p {
+  font-size: 15px;
+  color: #555555;
+}
+.threeicon {
+  transition: 0.5s;
+}
+.threesectionbox-sub:hover .threeicon {
+  transform: scale(1.2);
+}
+/*-------------------------------------- third box css ended here----------------------------------- */
+
+/* --------------------------------------product benifits section started here------------------- */
+section#productbenifitsSection {
+  padding: 80px 0;
+}
+#productbenifitsSection span.fa.fa-check {
+  border: 2px solid #2cbde2;
+  color: #2cbde2;
+  border-radius: 50px;
+  font-size: 22px;
+}
+#productbenifitsSection h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+section#productbenifitsSection p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #555555;
+}
+#productbenifitsSection .productbenifitsbox h3 {
+  font-weight: 600;
+  line-height: 1.7;
+  color: #333;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+  margin: 10px 0 5px;
+}
+section#productbenifitsSection .productbenifitsbox p {
+  font-size: 15px;
+  text-align: left !important;
+  margin-bottom: 15px;
+}
+.productbenifitsbox {
+  margin-top: 30px;
+  margin: 7px;
+}
+.productsectiontopcontent {
+  padding-bottom: 40px;
+}
+/* --------------------------------------product benifits section ended here------------------- */
+/* ---------------------------------------amazing product section started here-------------- */
+section#amazingProduct {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+.tv-icon {
+  position: relative;
+  font-size: 45px;
+  color: #2cbde2;
+}
+.tv-icon::after {
+  content: "\f26c";
+  font-family: "FontAwesome";
+}
+.ptool-icon {
+  position: relative;
+  font-size: 45px;
+  color: #2cbde2;
+}
+.ptool-icon::after {
+  content: "\f1e6";
+  font-family: "FontAwesome";
+}
+.antena-icon {
+  position: relative;
+  font-size: 45px;
+  color: #2cbde2;
+}
+.antena-icon::after {
+  content: "\f012";
+  font-family: "FontAwesome";
+}
+.gear-icon {
+  position: relative;
+  font-size: 45px;
+  color: #2cbde2;
+}
+.gear-icon::after {
+  content: "\f085";
+  font-family: "FontAwesome";
+}
+.amazingproductBox {
+  width: 33.33333333%;
+}
+.amazingproducttopbox {
+  text-align: end;
+  margin-bottom: 30px;
+}
+.amazingproductbottombox {
+  text-align: end;
+  margin-bottom: 30px;
+}
+section#amazingProduct h3 {
+  font-weight: 600;
+  line-height: 1.7;
+  color: #333;
+  letter-spacing: -0.02em;
+  font-size: 17px;
+  margin: 15px 0 3px;
+}
+.amazingproducttopbox_1,
+.amazingproductbottombox_1 {
+  margin-bottom: 30px;
+}
+.amazingproductheadingcontent {
+  text-align: center;
+}
+#amazingProduct h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #333333;
+  letter-spacing: -0.04em;
+}
+.amazingproductheadingcontent {
+  padding-bottom: 40px;
+}
+.featuresicon {
+  transition: 0.5s;
+}
+.amazingproducttopbox:hover .featuresicon,
+.amazingproductbottombox:hover .featuresicon,
+.amazingproducttopbox_1:hover .featuresicon,
+.amazingproductbottombox_1:hover .featuresicon {
+  transform: translateY(-10px);
+}
+/* ---------------------------------------amazing product section ended here----------------- */
+/* ------------------------------------------product rewives started here------------------- */
+section#productReviews {
+  padding: 80px 0;
+  background-color: #f7f7f7;
+}
+.productreviewsheadingtext,
+.faqheading {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.productreviewsheadingtext h2,
+#faq h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #333333;
+  letter-spacing: -0.04em;
+}
+.amazingproductheadingcontent p,
+.productreviewsheadingtext p,
+#faq p {
+  font-size: 15px;
+  color: #555555;
+}
+.reviewsBox {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin: 10px;
+}
+.reviewssubBox {
+  padding: 25px;
+  text-align: center;
+}
+.rating-star li {
+  display: inline-block;
+}
+#productReviews span.fa.fa-quote-left {
+  font-size: 45px;
+  margin: 0 0 20px;
+  color: #2cbde2;
+}
+section#productReviews p {
+  font-size: 13px;
+  line-height: 28px;
+  margin-bottom: 15px;
+  color: #555555;
+}
+section#productReviews h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 3px;
+  color: #333333;
+}
+ul.rating-star li {
+  color: #fed701;
+}
+section#productReviews ul.rating-star-1 li {
+  display: inline-block;
+  color: #fed701;
+}
+section#productReviews ul.rating-star li,
+section#productReviews ul.rating-star-1 li {
+  margin: 0 3px;
+}
+section#productReviews span.fa.fa-star.diff {
+  color: #ddd;
+}
+/* ------------------------------------------product rewives ended here here------------------- */
+/* ------------------------------------------faq section started here---------------------------- */
+.faqsubbox {
+  padding: 25px;
+}
+section#faq {
+  padding: 80px 0;
+}
+section#faq h3 {
+  margin: 0 0 10px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: #333;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+section#faq p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #555555;
+}
+/* ------------------------------------------faq section ended here--------------------------------- */
+/* -------------------------------------------purchase product section started here------------------ */
+#purchesproduct {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+  border-bottom: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
+}
+section#purchesproduct h2,
+#subscribe h2,
+#imagegallery h2,
+#collectproduct h2 {
+  color: #333333;
+  font-size: 24px;
+  margin: 0 0 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+section#purchesproduct p,
+#subscribe p,
+section#imagegallery p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #555555;
+}
+.galleryheadingtext {
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* -------------------------------------------purchase product section ended here------------------ */
+/* -------------------------------------------image gallery started here---------------------------- */
+section#imagegallery {
+  padding: 80px 0;
+}
+.galleryboxwatch {
+  transition: 0.5s;
+}
+.galleryboxwatch:hover img {
+  background-color: #ddd;
+  transform: scale(1.1);
+}
+/* -------------------------------------------image gallery ended here------------------------------ */
+/* -------------------------------------------subscribe newletter section started here-------------- */
+#subscribe {
+  background-image: url("../Assets/Images/subscribe-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  border-bottom: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
+}
+.subscribeheading {
+  text-align: center;
+}
+.subscribe-form {
+  text-align: center;
+}
+input#subscribeemail {
+  border: 1px solid #ddd;
+  background: none;
+  color: #444;
+  font-size: 14px;
+  line-height: 50px;
+  padding: 0 15px;
+  width: 70%;
+}
+button.submit {
+  background-color: #2cbde2;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 51px;
+  padding: 0 30px;
+  width: 30%;
+  color: #fff;
+  margin-left: -7px;
+  font-family: "Cabin", sans-serif;
+  transition: 0.5s;
+}
+button.submit:hover {
+  opacity: 0.8;
+}
+input#subscribeemail:focus-visible {
+  outline: none;
+}
+form.subscribe {
+  width: 500px;
+  margin: 0 auto;
+}
+.sociallinks {
+  text-align: center;
+}
+#subscribe ul.social li {
+  display: inline-block;
+  margin: 0 10px;
+}
+ul.social li a span {
+  background-color: #2cbde2;
+  color: #fff;
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  line-height: 40px;
+  transition: 0.3s;
+}
+.sociallinks {
+  margin-top: 40px;
+}
+.social li a span:hover {
+  transform: translateY(-10px);
+}
+section#footer {
+  padding: 40px 0;
+  background-color: #f7f7f7;
+}
+#footer p {
+  font-size: 12px;
+  color: #444444;
+}
+section#footer p {
+  text-align: center;
+}
+.gallerybox {
+  padding: 50px 0;
+}
+/* -------------------------------------------subscribe newletter section ended here-------------- */
+/* --------------------------------collect your product section started here-------------- */
+section#collectproduct {
+  padding: 80px 0;
+}
+#collectproduct p {
+  font-size: 15px;
+  color: #555555;
+}
+.producttext {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.collectinnerproduct {
+  border: 1px solid #ddd;
+}
+a.purchase {
+  background-color: #2cbde2;
+  font-size: 14px;
+  color: #fff;
+  line-height: 51px;
+  display: inline-block;
+  padding: 0 30px;
+}
+.collectsProduct {
+  position: relative;
+}
+a.purchase {
+  background-color: #2cbde2;
+  font-size: 14px;
+  color: #fff;
+  line-height: 51px;
+  display: inline-block;
+  padding: 0 30px;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+.tabel-cell {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.collectsProduct:hover a.purchase {
+  transform: scale(1);
+  background-color: #1bacd1;
+}
+/* --------------------------------collect your product section ended here */
+
+.toggle {
+  position: relative;
+  display: none;
+}
+.toggle::after {
+  position: absolute;
+  content: "\f0c9";
+  font-family: fontAwesome;
+  display: block;
+  top: 0;
+  right: 0;
+}
+/* ul.menu {
+  display: none;
+} */
+/* ---------------------------------media query started here--------------- */
+@media only screen and (max-width: 768px) {
+  .row {
+    display: block;
+  }
+  .headerright-side,
+  .yourproductright,
+  .threesectionBox,
+  .amazingproductBox,
+  .yourproductleft,
+  .headerleft-side {
+    width: 100%;
+  }
+  .amazingproductbottombox,
+  .productbenifitsbox,
+  .amazingproducttopbox,
+  .headerlogo {
+    text-align: center;
+  }
+  .amazingproducttopbox_1,
+  .amazingproductbottombox_1 {
+    text-align: center;
+  }
+  section#productbenifitsSection .productbenifitsbox p {
+    text-align: center !important;
+  }
+  section#productbenifitsSection {
+    padding: 40px 0;
+  }
+  #yourproduct {
+    padding: 25px 0;
+  }
+  .productcontent h1 {
+    font-size: 30px;
+  }
+  section.threesection {
+    padding: 40px 0;
+  }
+  section#imagegallery {
+    padding: 40px 0;
+  }
+  form.subscribe {
+    width: 100%;
+  }
+  input#subscribeemail {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  button.submit {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .productsectiontopcontent,
+  .amazingproductheadingcontent,
+  .productreviewsheadingtext,
+  .faqheading,
+  .galleryheadingtext,
+  .producttext {
+    padding-bottom: 20px;
+  }
+  #subscribe {
+    padding: 40px 0;
+  }
+  section#amazingProduct,
+  #productReviews,
+  section#productReviews,
+  section#faq,
+  #purchesproduct,
+  section#collectproduct {
+    padding: 40px 0;
+  }
+  .faqsubbox {
+    padding: 10px;
+  }
+  .purchesproductleft {
+    margin-bottom: 25px;
+  }
+  .yourproductleft {
+    padding-bottom: 25px;
+  }
+  section#footer {
+    padding: 20px 0;
+  }
+  ul.social li a span {
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+  /*  */
+  .toggle::after {
+    position: absolute;
+    content: "\f0c9";
+    font-family: fontAwesome;
+    display: block;
+    top: -25px;
+    right: 30px;
+  }
+  .toggle.active::after {
+    content: "\f00d";
+    font-family: fontAwesome;
+  }
+  ul.menu {
+    display: none;
+  }
+  .toggle {
+    display: block;
+  }
+  .menu.active {
+    display: block;
+  }
+  .menu.active ul li {
+    display: block;
+    width: 100%;
+  }
+  .header-menu ul li {
+    display: block;
+    text-align: center;
+  }
+  .productimg {
+    text-align: center;
+  }
+  .menu.active {
+    display: block;
+    background-color: #333333;
+  }
+  ul.menu.active a {
+    color: #fff;
+  }
+  /*  */
+}
+/* ------------------------------------media query ended here------------------ */
+/*---------------------------- started media query for navbar -------------------*/
+@media only screen and (min-width: 769px) and (max-width: 1161px) {
+  .header-menu ul li {
+    margin: 0 10px;
+  }
+}
+/* ----------------------------ended media query for navbar--------------------- */
